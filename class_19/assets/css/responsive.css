@@ -1,0 +1,144 @@
+
+.container {
+	max-width: 1350px;
+}
+.mobile_menu_bar_area{
+	display: none;
+}
+.mobile_menu_bar {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+.mobile_menu_bar_area {
+  float: right;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.menu_area > ul > li > span {
+	position: absolute;
+	top: -2px;
+	right: 0;
+	font-size: 30px;
+	padding: 0 15px;
+	cursor: pointer;
+	display: none;
+}
+
+
+
+
+@media only screen and (min-width: 1199px) and (max-width: 1800px) {
+
+
+
+}
+
+
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+
+
+}
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+
+
+}
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+
+	.menu_area.ml-auto {
+		margin: 0 !important;
+		width: 100%;
+	}
+	.menu_area > ul > li {
+		display: block;
+		position: relative;
+		border-bottom: 1px solid #d6d6d6;
+	}
+	.menu_area > ul > li::after {
+		display: none;
+	}
+	.menu_area > ul > li > span {
+		display: block;
+	}
+	.menu_area ul li ul {
+		position: relative;
+		top: 0;
+		opacity: 1;
+	}
+	.menu_area ul li ul li{
+		padding-left: 50px;
+	}
+	#top-menu {
+		display: none;
+	}
+	.mobile_menu_bar_area{
+		display: block;
+	}
+	.logo_area {
+		width: 100%;
+		padding-left: 5px;
+	}
+	.single_news,
+	.single_news.img_big,
+	.single_news.img_big_2{
+		width: 100%;
+	}
+	.single_news.img_big .news_text,
+	.single_news.img_big_2 .news_text {
+		position: relative;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.form_area {
+		padding-left: 0;
+	}
+	.footer_info_area,
+	.footer_logo {
+		width: 100%;
+		margin-left: 0;
+	}
+	.footer_logo {
+		margin-bottom: 20px;
+	}
+	.footer_area {
+		display: block;
+		overflow: hidden;
+	}
+	
+	.page_banner h1 {
+		padding: 10px 50px;
+		font-size: 40px;
+	}
+	.page_banner {
+		padding-top: 75px;
+	}
+	.page_content_area {
+		margin-top: 50px;
+	}
+	.product_details_page img{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	
+
+
+}
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+
+
+}
