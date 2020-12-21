@@ -1,0 +1,23 @@
+.main_header_area {
+	background-color: rgba(255,255,255, .5);
+}
+.main_header_area .mainmenu ul#nav li.current_page_item a {
+	color: #961442;
+	position: relative
+}
+.main_header_area .mainmenu ul#nav li.current_page_item a::after {
+	content: '';
+	position: absolute;
+	bottom: 26px;
+	left: 10%;
+	width: 80%;
+	height: 1px;
+	background: #961442;
+	/* margin: 0 auto; */
+}
+.main_header_area.sticky .mainmenu ul#nav li.active a, 
+.main_header_area.sticky .mainmenu ul#nav li:hover a, 
+.mainmenu ul#nav li.active a, 
+.mainmenu ul#nav li:hover a {
+	color: #961442;
+}

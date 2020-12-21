@@ -1,0 +1,185 @@
+.main_header_area {
+	background-color: rgba(255,255,255, .5);
+}
+.main_header_area .mainmenu ul#nav li.current_page_item a {
+	color: #961442;
+	position: relative
+}
+.main_header_area .mainmenu ul#nav li.current_page_item a::after {
+	content: '';
+	position: absolute;
+	bottom: 26px;
+	left: 10%;
+	width: 80%;
+	height: 1px;
+	background: #961442;
+	/* margin: 0 auto; */
+}
+.main_header_area.sticky .mainmenu ul#nav li.active a, 
+.main_header_area.sticky .mainmenu ul#nav li:hover a, 
+.mainmenu ul#nav li.active a, 
+.mainmenu ul#nav li:hover a {
+	color: #961442;
+}
+
+.single_slide .slide_text h2 {
+	font-size: 39px;
+	font-weight: 400;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+
+.sk_slider_text {
+  float: right;
+  text-align: right;
+  width: 500px;
+  margin-top: 150px;
+}
+.sk_sld_box {
+  background: rgba(255,255,255, .2);
+  padding: 15px;
+}
+.sk_sld_box p {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 300;
+}
+.single_slide .slide_text h2::after {
+  content: '';
+  width: 50%;
+  height: 3px;
+  right: 0;
+  text-align: ;
+  top: ;
+  bottom: -15px;
+  background: #fff;
+  position: absolute;
+}
+
+.single_slide .slide_text a {
+	background-color: #a62030;
+	text-transform: uppercase;
+	border-radius: 0;
+}
+
+
+.slider_promo_area {
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	width: 100%;
+	z-index: 9;
+	background-image: url('../img/skills_up/slider_bg.png');
+	background-size: cover;
+	padding: 5px;
+}
+.promo_img {
+  float: left;
+}
+.promo_text {
+  float: left;
+  color: #fff;
+  margin-left: 10px;
+}
+.single_promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome_area .welcome_slides .owl-nav .owl-prev, 
+.welcome_area .welcome_slides .owl-nav .owl-next {
+	color: #a62030;
+}
+.welcome_area .welcome_slides .owl-nav .owl-prev:hover, 
+.welcome_area .welcome_slides .owl-nav .owl-next:hover {
+	background-color: #a62030;
+}
+.single_slide .slide_text a:hover {
+	background-color: #DEB900;
+}
+
+
+.about_background_img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40%;
+	height: 100%;
+	background-image: url('../img/skills_up/about_img.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.about_us_area {
+  position: relative;
+}
+.about_us_text {
+	margin-left: 40%;
+	padding: 100px 70px;
+	width: 45%;
+}
+.about_us_text > h3 {
+	color: #a62030;
+}
+
+.single_feature:hover .feature_img i,
+.single_feature.active .feature_img i {
+	color: #a62030;
+}
+.single_feature:hover .feature_text h4, 
+.single_feature.active .feature_text h4 {
+	color: #a62030;
+}
+.single_feature::after {
+	background-color: #a62030;
+}
+.skills_border{
+	border-top: 2px solid #a62030;
+	border-bottom: 2px solid #a62030;
+}
+.video_play_area h3 {
+	color: #fff;
+	font-size: 40px;
+}
+
+.video_area.section_padding_200 {
+	padding: 100px 0 300px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
