@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>Loft44 Sub Title</name>
+	<code>loft44_sub_title</code>
+	<version>1.0.0</version>
+	<author>Khurram</author>
+	<link>https://www.compleetshop.cloud</link>
+	
+	<file path="admin/view/template/catalog/product_form.twig">
+		<operation error="log">
+			<search><![CDATA[ <label class="col-sm-2 control-label" for="input-description{{ language.language_id }}">{{ entry_description }}</label> ]]></search>
+			<add position="before" offset="1"><![CDATA[
+                  
+              <div class="form-group">
+				  <label class="col-sm-2 control-label" for="input-sub_title{{ language.language_id }}">{{ entry_sub_title }}</label>
+				  <div class="col-sm-10">
+					<input type="text" name="product_description[{{ language.language_id }}][sub_title]" value="{{ product_description[language.language_id] ? product_description[language.language_id].sub_title }}" placeholder="{{ entry_sub_title }}" id="input-sub_title{{ language.language_id }}" class="form-control"/>
+					</div>
+				</div>
+                  
+				]]>
+			</add>
+		</operation>
+		
+	</file>
+	<file path="admin/language/*/catalog/product.php">
+		<operation error="log">
+			<search><![CDATA[ // Text ]]></search>
+			<add position="after"><![CDATA[ $_['entry_sub_title']        = 'Sub Title'; ]]></add>
+		</operation>
+	</file>
+	<file path="admin/model/catalog/product.php">
+		<operation error="log">
+			<search><![CDATA[ $this->db->query("INSERT INTO " . DB_PREFIX . "product_description SET product_id = '" . (int)$product_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', tag = '" . $this->db->escape($value['tag']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "'"); ]]></search>
+			<add position="after"><![CDATA[
+			if (isset($value['sub_title'])) {
+                $this->db->query("UPDATE " . DB_PREFIX . "product_description SET sub_title = '" . $this->db->escape($value['sub_title']) . "' WHERE product_id = '" . (int)$product_id . "'");
+            }
+			]]></add>
+		</operation>
+		
+		<operation error="log">
+			<search><![CDATA[ 'name'             => $result['name'], ]]></search>
+			<add position="after"><![CDATA[ 'sub_title'             => $result['sub_title'], ]]></add>
+		</operation>
+		
+	</file>
+	<file path="catalog/controller/product/category.php">
+		<operation error="log">
+			<search><![CDATA[ 'name'        => $result['name'], ]]></search>
+			<add position="after"><![CDATA[ 'sub_title'        => $result['sub_title'], ]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/product/search.php">
+		<operation error="log">
+			<search><![CDATA[ 'name'        => $result['name'], ]]></search>
+			<add position="after"><![CDATA[ 'sub_title'        => $result['sub_title'], ]]></add>
+		</operation>
+	</file>
+	<file path="catalog/model/catalog/product.php">
+		<operation error="log">
+			<search><![CDATA[ 'name'             => $query->row['name'], ]]></search>
+			<add position="after"><![CDATA[ 'sub_title'             => $query->row['sub_title'], ]]></add>
+		</operation>
+	</file>
+	
+	
+</modification>
