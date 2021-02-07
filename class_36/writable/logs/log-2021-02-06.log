@@ -1,0 +1,60 @@
+CRITICAL - 2021-02-06 07:23:13 --> Undefined variable: news_text
+#0 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/app/Views/news.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 4, Array)
+#1 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/View/View.php(220): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/Common.php(1217): CodeIgniter\View\View->render('news', Array, true)
+#4 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/app/Controllers/News.php(16): view('news', Array)
+#5 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/CodeIgniter.php(936): App\Controllers\News->index()
+#6 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#7 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-06 07:28:44 --> Trying to access array offset on value of type null
+#0 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/app/Views/news_details.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/Applications/M...', 4, Array)
+#1 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/View/View.php(220): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/Common.php(1217): CodeIgniter\View\View->render('news_details', Array, true)
+#4 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/app/Controllers/News.php(28): view('news_details', Array)
+#5 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/CodeIgniter.php(936): App\Controllers\News->details('index.php')
+#6 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#7 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-06 07:28:48 --> Trying to access array offset on value of type null
+#0 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/app/Views/news_details.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/Applications/M...', 4, Array)
+#1 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/View/View.php(220): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/Common.php(1217): CodeIgniter\View\View->render('news_details', Array, true)
+#4 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/app/Controllers/News.php(28): view('news_details', Array)
+#5 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/CodeIgniter.php(936): App\Controllers\News->details('index.php')
+#6 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#7 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-06 07:47:44 --> Trying to access array offset on value of type null
+#0 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/app/Views/product_details.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/Applications/M...', 5, Array)
+#1 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/View/View.php(220): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/Common.php(1217): CodeIgniter\View\View->render('product_details', Array, true)
+#4 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/app/Controllers/Product.php(28): view('product_details', Array)
+#5 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/CodeIgniter.php(936): App\Controllers\Product->details('index.php')
+#6 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-06 07:51:43 --> Undefined variable: data
+#0 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/app/Controllers/Auth.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 10, Array)
+#1 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/CodeIgniter.php(936): App\Controllers\Auth->index()
+#2 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-02-06 08:20:49 --> Invalid file: admin/profile.php
+#0 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/profile.p...')
+#1 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/Common.php(1217): CodeIgniter\View\View->render('admin/profile', Array, true)
+#2 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/app/Controllers/Admin/Profile.php(16): view('admin/profile', Array)
+#3 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/CodeIgniter.php(936): App\Controllers\Admin\Profile->index()
+#4 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Profile))
+#5 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/zp_rangpur_web_class/class_36/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
